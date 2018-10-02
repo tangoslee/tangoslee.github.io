@@ -18,22 +18,26 @@ export class NavibarComponent implements OnInit {
   }
 
   ngOnInit() {
-
   }
 
   // Collapse Navbar
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    // https://stackoverflow.com/questions/45446912/angular-4-scroll-element-offset-top-value?rq=1
-    const rect = this.mainNav.nativeElement.getBoundingClientRect();
-    const elTop = rect.top + window.pageYOffset - document.documentElement.clientTop;
-    // console.log({ elTop });
+    this.initMainNavTop();
+  }
 
-    if (elTop > 100) {
-      this.shrink = true;
-    } else {
-      this.shrink = false;
-    }
+  // https://stackoverflow.com/questions/45446912/angular-4-scroll-element-offset-top-value?rq=1
+  initMainNavTop() {
+    try {
+      const rect = this.mainNav.nativeElement.getBoundingClientRect();
+      const top = rect.top + window.pageYOffset - document.documentElement.clientTop;
+      // console.log({ top });
 
+      if (top > 100) {
+        this.shrink = true;
+      } else {
+        this.shrink = false;
+      }
+    } catch (e) { }
   }
 }
