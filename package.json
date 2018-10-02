@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "npx ngh"
+    "deploy": "npx ngh --dir=dist/tangoslee --repo=git@github.com:tangoslee/tangoslee.github.io.git --branch=master --no-silent"
   },
   "private": true,
   "dependencies": {
