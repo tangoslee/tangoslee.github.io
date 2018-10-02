@@ -1,1 +1,116 @@
 /* You can add global styles to this file, and also import other style files */
+/*Customer CSS*/
+@media (min-width: 300px) {
+  .fa-5x-icon {
+    font-size: 4em;
+  }
+  .solid-bg-content {
+    top: 15%;
+  }
+}
+@media (min-width: 400px) {
+  .fa-5x-response {
+      font-size: 2.5em;
+  }
+  .fa-5x-icon {
+    font-size: 5em;
+  }
+  .solid-bg-content {
+    top: 25%;
+  }
+}
+@media (min-width: 575px) {
+  .fa-5x-icon {
+    font-size: 3em;
+  }
+}
+@media (min-width: 768px) {
+  .fa-5x-response {
+      font-size: 3em;
+  }
+}
+@media (min-width: 992px) {
+  .fa-5x-response {
+      font-size: 5em;
+  }
+
+  .fa-5x-icon {
+    font-size: 5em;
+  }
+
+  .solid-bg-content {
+    top: 10%;
+  }
+}
+@media (min-width: 1200px) {
+  .fa-5x-response {
+      font-size: 6em;
+  }
+}
+.v-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.timeline-desc li {
+  margin-bottom: 1em;
+}
+
+.doc-download {
+  background-color: #222222;
+  color: #f1f1f1;
+  border-radius: 5px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+#contactForm .help-block {
+  height: 20px;
+}
+
+.solid-bg {
+  background-color: steelblue;
+  /* background-color: #110d00; */
+  /* opacity: 0.8; */
+  opacity: 0.5;
+}
+
+.solid-bg-content {
+  position: absolute;
+  /* width: 100%; */
+  height: 20px;
+  font-size: 40px;
+  text-align: left;
+  /* top: 10%; */
+  left: 1em;
+  margin-top: -12px;
+  color: white;
+  /* opacity: 0.4;  */
+}
+
+.block-center-container {
+  position: relative;
+  min-height: 100%;
+}
+
+.block-center-x {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.block-center-y {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.block-center-xy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

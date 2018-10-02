@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AppService } from '@app/core';
+import { HomeService } from '@app/modules';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'tangoslee';
+  title = 'app';
+  maintenance;
+
+  constructor(
+    private appService: AppService,
+    private homeService: HomeService,
+  ) {
+    this.homeService.init();
+
+    this.appService.maintenance
+      .subscribe(data => this.maintenance = data);
+  }
+
 }

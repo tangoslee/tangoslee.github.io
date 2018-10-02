@@ -1,0 +1,7 @@
+.btn-primary:disabled {
+  color: #fff;
+  background-color: #636260;
+  border-color: #636260;
+  cursor: not-allowed !important;
+  pointer-events: none;
+}

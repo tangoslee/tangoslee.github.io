@@ -1,0 +1,20 @@
+a {
+  cursor: pointer;
+}
+
+a:disabled {
+  cursor: not-allowed;
+}
+
+nav {
+  border-bottom: solid 5px #000;
+  padding-right: 2em;
+}
+
+@media (min-width: 575px) {}
+
+@media (min-width: 768px) {
+    padding-right: 3em;
+}
+
+@media (min-width: 992px) {}
