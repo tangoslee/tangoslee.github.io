@@ -10,11 +10,17 @@ export class PortfolioComponent implements OnInit {
 
   workshops = [
     {
-      id: 'fakeshop',
-      thumb: 'assets/img/workshop/fakeshop_400x300.png',  /*400x300*/
-      title: 'Fakeshop Website',
-      desc: '2018 | Workshop',
+      id: 'sociallogin2018',
+      thumb: 'assets/img/workshop/social-login/social-login_400x300.png',  /*400x300*/
+      title: 'Social Login',
+      desc: '2018 | A Ticket Commerce Site',
     },
+    // {
+    //   id: 'fakeshop',
+    //   thumb: 'assets/img/workshop/fakeshop_400x300.png',  /*400x300*/
+    //   title: 'Fakeshop Website',
+    //   desc: '2018 | Workshop',
+    // },
     {
       id: 'workshop1',
       thumb: 'assets/img/workshop/workshop1_400x300.png',  /*400x300*/
@@ -26,6 +32,22 @@ export class PortfolioComponent implements OnInit {
       thumb: 'assets/img/workshop/Dashboard2017_400x300.png',
       title: 'Dashboard',
       desc: '2017 | Project',
+    },
+    {
+      id: 'cyeditor2015',
+      thumb: 'assets/img/workshop/cyworld-editor-pc_400x300.png',
+      title: 'PC Web Editor',
+      desc: '2015 | Project',
+      icon: '',
+      color: {},
+    },
+    {
+      id: 'postpublisher2015',
+      thumb: 'assets/img/workshop/post-publisher_400x300.png',
+      title: 'Post Publisher',
+      desc: '2015 | Project',
+      icon: '',
+      color: {},
     },
     {
       id: 'tokudb2015',
