@@ -48,6 +48,7 @@ export class ContactComponent implements OnInit {
         // console.log('data:', data);
         this.appService.unloading();
         this.appService.setAlert('Your message has been sent.');
+        this.contactForm.reset();
       }, err => {
         // console.log('err:', err);
         this.appService.unloading();

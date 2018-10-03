@@ -7,7 +7,7 @@ import { HomeService } from '@app/modules/home';
 })
 export class NavibarComponent implements OnInit {
 
-  shrink = false;
+  shrink = true;
 
   @ViewChild('mainNav') mainNav: ElementRef;
 
@@ -18,6 +18,7 @@ export class NavibarComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.initMainNavTop();
   }
 
   // Collapse Navbar
