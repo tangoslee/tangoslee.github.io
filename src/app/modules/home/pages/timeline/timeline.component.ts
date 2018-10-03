@@ -9,6 +9,21 @@ export class TimelineComponent implements OnInit {
 
   timelines = [
     {
+      startDate: 'Jan 2017',
+      endDate: '2018',
+      position: 'Web Developer (Contract/Part-time)',
+      group: 'A Ticket Commerce Site (Remote, Korea)',
+      icon: 'assets/img/about/keyboard.png',
+      desc: [
+        'Integrated OAuth2 Social Login APIs. (Facebook, Kakao, Naver)',
+        'Setup a deploy/development environment (CentOS, Apache, PHP5, Rsync)',
+        `Devised enhanced product registration for the existing dashboard;
+          Reduced 80% of a number of unnecessary processes by analyzing task processes.
+          As a result, it saved 10% off Man-month of doing  products registration.`,
+        `Skills: PHP,  jQuery, Bootstrap 4, MySQL, Apache`,
+      ],
+    },
+    {
       startDate: 'Jan 2016',
       endDate: 'May 2018',
       position: 'Seneca College Student',
