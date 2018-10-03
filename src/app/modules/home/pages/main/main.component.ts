@@ -18,7 +18,8 @@ export class MainComponent implements OnInit, AfterViewInit {
   // https://alligator.io/angular/location-service/
   ngAfterViewInit() {
     try {
-      const path = this.location.path().replace(/^\//, '').split('/').shift();
+      const [path] = this.location.path().replace(/^\//, '').split('/');
+
       if (path) {
         const element = document.querySelector(`#${path}`);
         // console.log({path, element});
