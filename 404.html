@@ -6,12 +6,18 @@
   <title>Sangmin Lee</title>
   <base href="/">
 
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https; style-src 'self' data: 'unsafe-inline' fonts.googleapis.com; 
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https; 
+  style-src 'self' data: 'unsafe-inline' fonts.googleapis.com; 
+  font-src 'self' data: https://fonts.gstatic.com;
   connect-src 'self' https://6j8prezhl9.execute-api.us-east-2.amazonaws.com ws://localhost:4200">
-  <meta http-equiv="X-Content-Security-Policy:" content="default-src 'self' data: https; style-src 'self' data: 'unsafe-inline' fonts.googleapis.com; 
-  connect-src 'self' https://6j8prezhl9.execute-api.us-east-2.amazonaws.com ws://localhost:4200">
-  <meta http-equiv="X-WebKit-CSP" content="default-src 'self' data: https; style-src 'self' data: 'unsafe-inline' fonts.googleapis.com; 
-  connect-src 'self' https://6j8prezhl9.execute-api.us-east-2.amazonaws.com ws://localhost:4200">
+  <meta http-equiv="X-Content-Security-Policy:" content="default-src 'self'; 
+  style-src 'self' 'unsafe-inline' fonts.googleapis.com; 
+  font-src 'self' data: https://fonts.gstatic.com; 
+  connect-src https://6j8prezhl9.execute-api.us-east-2.amazonaws.com ws://localhost:4200">
+  <meta http-equiv="X-WebKit-CSP" content="default-src 'self'; 
+  style-src 'self' 'unsafe-inline' fonts.googleapis.com; 
+  font-src 'self' data: https://fonts.gstatic.com; 
+  connect-src https://6j8prezhl9.execute-api.us-east-2.amazonaws.com ws://localhost:4200">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
@@ -20,10 +26,10 @@
   <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="./assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <!-- <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"> -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'> -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
   <!-- Custom styles for this template -->
   <link href="./assets/css/agency.css" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
