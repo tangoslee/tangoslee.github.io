@@ -1,0 +1,44 @@
+<section id="about" #about>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">About</h2>
+        <h3 class="section-subheading text-muted">Simple Life, Simple Coding.</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="timeline">
+
+          <li *ngFor="let timeline of timelines" class="timeline-inverted">
+            <div class="timeline-image">
+              <img class="rounded-circle img-fluid" src="{{timeline.icon}}" alt="" />
+              <!-- <i class="fa fa-university fa-5x-response v-center"></i> -->
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>{{timeline.startDate}} - {{timeline.endDate}}</h4>
+                <h4 class="subheading">{{timeline.position}}</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">{{timeline.group}}</p>
+              </div>
+
+              <ul *ngFor="let desc of timeline.desc" class="timeline-desc">
+                <li>{{desc}}</li>
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <h4>Keep<br />Going!</h4>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,15 @@
+.btn-primary:disabled {
+  color: #fff;
+  background-color: #636260;
+  border-color: #636260;
+  cursor: not-allowed !important;
+  pointer-events: none;
+}
+
+.help-block {
+  margin-bottom: 0 !important;
+}
+
+.form-group {
+  margin-bottom: 3em !important;
+}
